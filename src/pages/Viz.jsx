@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { React, useState } from "react";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js/auto";
 import BarChart from "../components/BarChart";
 import { Button, Container, Form } from "react-bootstrap";
-// import Header from "../components/Header";
 
 Chart.register(CategoryScale);
 
@@ -67,7 +67,7 @@ function Viz() {
     <>
       {/* <Header /> */}
       <Container fluid className="bg-light">
-        <Container >
+        <Container>
           <h1 className="text-center py-4">Trapping Water Visualization</h1>
           <p className="text-center">
             Created a bar chart to help visualize the solution to{" "}

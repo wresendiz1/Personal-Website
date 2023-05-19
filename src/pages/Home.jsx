@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Container,
   Row,
@@ -13,9 +12,8 @@ import {
 } from "react-bootstrap";
 import wave from "../assets/wave.gif";
 import pro from "../assets/pro.png";
-// import resume from "../../public/ResendizTorresWilly_Resume.pdf"
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faFile, faLink, faBriefcase} from "@fortawesome/free-solid-svg-icons";
+import { faFile, faLink, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const style = {
@@ -70,7 +68,7 @@ function Home() {
         <Container>
           <Row className="align-items-center">
             <Col>
-              <h3 className="text-primary mb-3 fw-bold">Hello! I'm </h3>
+              <h3 className="text-primary mb-3 fw-bold">Hello! I&apos;m </h3>
               <h1 className="display-3 mb-3 fw-light">Willy Resendiz</h1>
             </Col>
             <Col>
@@ -102,16 +100,18 @@ function Home() {
               </Button>
               <Button
                 variant="primary"
-                href='ResendizTorresWilly_Resume.pdf'
+                href="ResendizTorresWilly_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ms-2"
               >
-                <FontAwesomeIcon icon={faFile} className="me-1"/> Resume
+                <FontAwesomeIcon icon={faFile} className="me-1" /> Resume
               </Button>
             </Col>
             <Col>
-              <h1 className="text-primary mb-3 fw-bold py-3">Relevant Coursework</h1>
+              <h1 className="text-primary mb-3 fw-bold py-3">
+                Relevant Coursework
+              </h1>
               <Table striped bordered hover>
                 <thead>
                   <tr>
@@ -145,7 +145,9 @@ function Home() {
         </Container>
         <Container className="py-3">
           <Card>
-            <Card.Header className="text-primary fw-bold fs-1 text-center">Projects</Card.Header>
+            <Card.Header className="text-primary fw-bold fs-1 text-center">
+              Projects
+            </Card.Header>
             <Card.Body>
               <Tab.Container id="tabs" defaultActiveKey="Longhorn Banking">
                 <Row>
@@ -162,7 +164,9 @@ function Home() {
                     <Tab.Content>
                       {Object.keys(proj).map((project, index) => (
                         <Tab.Pane eventKey={project} key={index}>
-                          <h3 className="text-center fw-bold py-3">{project}</h3>
+                          <h3 className="text-center fw-bold py-3">
+                            {project}
+                          </h3>
                           <p className="text-center">
                             {proj[project].Description}
                           </p>
@@ -175,7 +179,10 @@ function Home() {
                                 rel="noopener noreferrer"
                                 className="me-2"
                               >
-                                <FontAwesomeIcon icon={faLink} className="me-1"/>
+                                <FontAwesomeIcon
+                                  icon={faLink}
+                                  className="me-1"
+                                />
                                 Link
                               </Button>
                             ) : (
@@ -187,7 +194,10 @@ function Home() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                <FontAwesomeIcon icon={faBriefcase} className="me-1"/>
+                                <FontAwesomeIcon
+                                  icon={faBriefcase}
+                                  className="me-1"
+                                />
                                 Repo
                               </Button>
                             ) : (

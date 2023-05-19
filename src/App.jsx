@@ -1,8 +1,7 @@
-import { createHashRouter,RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Viz from "./pages/Viz";
-
 
 const router = createHashRouter([
   {
@@ -21,12 +20,8 @@ const router = createHashRouter([
   },
 ]);
 
-
-
 function App() {
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

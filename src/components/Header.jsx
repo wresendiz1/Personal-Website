@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
