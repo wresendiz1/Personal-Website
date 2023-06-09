@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     open: true,
   },
-  define: {
-    "process.env": process.env,
-  },
+  // define: {
+  //   "process.env": process.env,
+  // },
 });

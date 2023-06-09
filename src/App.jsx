@@ -1,20 +1,34 @@
+// import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import { createHashRouter, RouterProvider } from "react-router-dom";
+// import Header from "./components/Header";
 import Home from "./pages/Home";
-import Header from "./components/Header";
-import Viz from "./pages/Viz";
+import Coursework from "./pages/Coursework";
+import Projects from "./pages/Projects";
+import AnimatedRoutes from "./components/AnimatedRoutes";
+// import Viz from "./pages/Viz";
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <AnimatedRoutes />,
+    // element: (
+    //   <>
+    //     <Header />
+    //     <Outlet />
+    //   </>
+    // ),
     children: [
       {
         index: true,
         element: <Home />,
       },
       {
-        path: "viz",
-        element: <Viz />,
+        path: "courses",
+        element: <Coursework />,
+      },
+      {
+        path: "projects",
+        element: <Projects />,
       },
     ],
   },

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hover-grey {
+    @apply transition-all duration-500 ease-in-out hover:bg-gray-200;
+  }
+  .hover-text-grey {
+    @apply transition-all duration-1000 ease-in-out hover:text-gray-200;
+  }
+  .nav-link {
+    @apply hover-grey rounded p-1 text-sm font-semibold dark:text-white;
+  }
+  .wave-background {
+    @apply fixed left-0 top-0 -z-10 min-h-full w-screen bg-[url('./assets/wave.gif')] bg-cover bg-center blur-md;
+  }
+  .wave-background-2 {
+    @apply fixed left-0 top-0 -z-10 min-h-full w-screen bg-[url('./assets/wave-dark.gif')] bg-cover bg-center blur-md;
+  }
+  html {
+    @apply min-w-[360px] scroll-smooth;
+  }
+  body {
+    @apply bg-white dark:bg-gray-900;
+  }
+  .circle {
+    @apply -z-10 h-[450px] w-[450px] rounded-full bg-gradient-to-b from-blue-600 from-40% via-sky-400 via-40% to-sky-300 to-70% blur-[140px];
+  }
+
+  /* Props: https://codepen.io/sosuke/pen/Pjoqqp */
+  .image-to-white {
+    @apply brightness-105 contrast-[102%] hue-rotate-[287deg] invert-[100%] saturate-0 sepia-0 filter;
+  }
+}
